@@ -97,6 +97,28 @@ class BusinessCardApp extends StatelessWidget {
                 ),
               ),
             ),
+                        Padding(
+              padding: const EdgeInsets.only(top: 5,left: 16,right: 16),
+
+              child: Container(
+                height: 65,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Colors.white,
+                ),
+                child: Row(
+                  // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                  children: [
+                    Spacer(flex: 1,),
+                    Icon(Icons.mail, size: 30, color: Color(0xFF2B475E),),
+                    Spacer(flex: 1),
+                    Text("marina.tarek.w@gmail.com", style: TextStyle(fontSize: 20),),
+                    Spacer(flex: 3,)
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
