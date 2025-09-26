@@ -13,7 +13,7 @@ class BusinessCardApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Color(0xFF2B475E),
         body: Column(
-          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.center,
           // crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // Container(
@@ -46,7 +46,6 @@ class BusinessCardApp extends StatelessWidget {
                     image: DecorationImage(
                       image: AssetImage("images/profile.png"),
                       fit: BoxFit.fill,
-                      // alignment: Alignment(0, 0.3), // نزول لتحت (غيري الرقم حسب اللي محتاجة)
                     ),
                   ),
                 ),
@@ -88,18 +87,18 @@ class BusinessCardApp extends StatelessWidget {
                   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
                   children: [
-                    Spacer(flex: 1,),
                     Icon(Icons.phone, size: 30, color: Color(0xFF2B475E),),
-                    Spacer(flex: 1),
-                    Text("(+20) 1550348993", style: TextStyle(fontSize: 20),),
-                    Spacer(flex: 3,)
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20),
+                      child: Text("(+20) 1550348993", style: TextStyle(fontSize: 20),),
+                    ),
+                    
                   ],
                 ),
               ),
             ),
                         Padding(
-              padding: const EdgeInsets.only(top: 5,left: 16,right: 16),
-
+              padding: EdgeInsets.symmetric(horizontal: 16 ,vertical: 8),
               child: Container(
                 height: 65,
                 decoration: BoxDecoration(
@@ -107,14 +106,15 @@ class BusinessCardApp extends StatelessWidget {
                   color: Colors.white,
                 ),
                 child: Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
-                  children: [
-                    Spacer(flex: 1,),
+                  children: [  
                     Icon(Icons.mail, size: 30, color: Color(0xFF2B475E),),
-                    Spacer(flex: 1),
-                    Text("marina.tarek.w@gmail.com", style: TextStyle(fontSize: 20),),
-                    Spacer(flex: 3,)
+
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: Text("marina.tarek.w@gmail.com", style: TextStyle(fontSize: 20),),
+                      ),
+                    
                   ],
                 ),
               ),
